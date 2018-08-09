@@ -171,6 +171,9 @@
       background-color: #363636;
       margin-bottom: 4px;
       padding: 1rem;
+      @media (max-width: 767px) {
+        margin: 4px 1rem;
+      }
       .question {
         color: white;
       }
