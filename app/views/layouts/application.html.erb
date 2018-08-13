@@ -28,9 +28,13 @@
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+    <script defer href="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
             integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
             crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
 
     <!-- Animate.css CDN -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -38,10 +42,9 @@
   </head>
 
   <body>
-    <div class="background-image">
-      <%= render "header" %>
-      <%= yield %>
-      <%= render "footer" %>
-    </div>
+    <div class="background-image"></div>
+    <%= render "header" %>
+    <%= yield %>
+    <%= render "footer" %>
   </body>
 </html>

@@ -14,17 +14,16 @@
 
 // Section styles
 
-.nav-links {
-  list-style-type: none;
-  margin-top: 1rem;
-  z-index: 100;
-}
-.nav-link {
-  display: block;
+.navbar-nav a {
+  display: inline-block;
   float: left;
-  margin: 0 1rem 2rem;
   color: #C9C9C9;
   font-size: 28px;
+  margin-left: 8px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .brand {
@@ -33,37 +32,40 @@
   position: relative;
 }
 
-.nav-logo {
-
-}
-
 .background-image {
   background-image: url("baseball-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
 }
 
 .phone-box {
-  z-index: 0;
-  padding: 2rem;
+  padding: 1rem 0 !important;
+  margin: auto;
   .phone-image {
-    width: 100%;
-    padding: 0 2rem;
+    display: block;
+    width: 70%;
+    margin: auto;
   }
   @media (min-width: 576px) and (max-width: 776px) {
     .phone-image {
       position: fixed;
-      width: 350px;
-      margin-top: 6rem
+      top: 120px;
+      height: 300px;
+      width: auto;
+      margin-left: 6rem ;
     }
   }
 }
 
 .home-text-box {
+  padding: 0 !important;
   h2 {
     color: white;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   h4 {
@@ -72,9 +74,15 @@
   }
 }
 
+@media (max-width: 776px) {
+  .home-text-box {
+    text-align: center;
+  }
+}
+
 .explainer {
   display: table;
-  margin: 6rem 2rem 6rem auto;
+  margin: 3rem auto;
 }
 
 .explainer-box {
@@ -84,7 +92,7 @@
   border-radius: 12px;
   background-color: #363636;
   float: none;
-  display: table-cell;
+  display: block;
   vertical-align: top;
   .explainer-icon {
     width: 50px;
@@ -93,7 +101,7 @@
     border-radius: 50px;
     position: absolute;
     top: -28px;
-    left: 42%;
+    left: 41%;
   }
   .red {
     background-color: tomato;
@@ -109,14 +117,21 @@
     color: #F9F9F9;
   }
 }
+@media (max-width: 576px) {
+  .explainer-box {
+    width: 85% !important;
+  }
+}
+
+
+.app-store-link {
+  cursor: pointer;
+}
 
 .power-ups {
-  height: 100vh;
-  @media (max-width: 767px) {
-    height: 100%;
-  }
+  position: relative;
   h1 {
-    margin: 4rem auto;
+    margin: 2rem auto;
     color: white;
   }
   h3 {
@@ -127,13 +142,11 @@
   }
   .power-up-box {
     padding: 2rem 3rem 0;
+    height: 240px;
     margin: 2rem auto 0;
     border: 3px solid lightgrey;
     border-radius: 12px;
     background-color: #1d1d1d;
-    float: none;
-    display: table-cell;
-    vertical-align: top;
   }
   @media (max-width: 767px) {
     .power-up-box {
@@ -159,7 +172,7 @@
     background-color: blue;
   }
   .streak-text {
-    margin: 2rem auto 0 ;
+    margin: 3rem auto 0 ;
   }
 }
 
@@ -179,6 +192,58 @@
       }
       .answer {
         color: #C9C9C9;
+      }
+    }
+  }
+}
+
+.contact_section {
+  .contact_input_box {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #666;
+    border-radius: 30px;
+    color: #fff;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    resize: none;
+  }
+  .contact_button {
+    border-radius: 30px;
+    font-size: 18px;
+    height: auto;
+    padding: 10px 25px;
+  }
+  .address, .phone, .email {
+    color: #707070;
+    margin-bottom: 1rem;
+  }
+  .contact_form {
+    margin-bottom: 4rem;
+  }
+  .email {
+    color: #707070;
+    a {
+      color: #707070;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 2rem;
+    li {
+      display: inline-block;
+      i {
+        color: white;
+        font-size: 40px;
+        margin: 5px 0 5px 5px;
+        &:hover {
+          color: white
+        }
       }
     }
   }

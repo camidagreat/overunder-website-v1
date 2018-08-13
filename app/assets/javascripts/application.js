@@ -13,3 +13,9 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+$( '.navbar .navbar-nav a' ).on( 'click', function () {
+	$( '.navbar .navbar-nav' ).find( 'li .active' ).removeClass( 'active' );
+	$( this ).addClass( 'active' );
+});
