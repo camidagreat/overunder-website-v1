@@ -34,7 +34,8 @@
 								<div class="contact_form">
 									<div id="show_contact_msg"></div>
 								<!-- Contact Form Start -->
-									<form method="post" id="contact_form" action="contact.php">
+									<form method="post" id="contact_form" action="contact_form_submit">
+										<%= token_tag %> 
 										<input type="text" id="contact_name" name="name" class="form-control contact_input_box wow fadeInUp" placeholder="Name" required/>
 										<input type="email" id="contact_email" name="email" class="form-control contact_input_box wow fadeInUp" placeholder="E-mail" required/>
 										<textarea id="contact_text" name="message" rows="5" cols="30" class="form-control contact_input_box wow fadeInUp" placeholder="Message" required></textarea>

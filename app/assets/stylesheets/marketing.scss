@@ -43,8 +43,8 @@
 }
 
 .phone-box {
-  padding: 1rem 0 !important;
-  margin: auto;
+  padding: 1rem !important;
+  margin: 1rem auto;
   .phone-image {
     display: block;
     width: 70%;
@@ -54,9 +54,9 @@
     .phone-image {
       position: fixed;
       top: 120px;
-      height: 300px;
+      height: 450px;
       width: auto;
-      margin-left: 6rem ;
+      margin-left: 2rem ;
     }
   }
 }
@@ -220,6 +220,12 @@
   }
   .contact_form {
     margin-bottom: 4rem;
+    input {
+      color: #f0f0f0;
+      &:focus {
+        background-color: transparent;
+      }
+    }
   }
   .email {
     color: #707070;
